@@ -1,5 +1,7 @@
 # ES-DE Mini Classic — port para RetroBat
 
+<img width="1918" height="1008" alt="Screenshot_7" src="https://github.com/user-attachments/assets/5ba6721c-e14e-442f-b1b5-9cdf3225058c" />
+
 ## Créditos
 
 - **Tema original ("ESDEmini"):** [Weestuarty-es-de/mini-es-de](https://github.com/Weestuarty-es-de/mini-es-de),
@@ -94,3 +96,6 @@ adicionar um sistema, basta criar/editar um desses arquivos:
 4. Lista vs grade: **Configurações da interface → Estilo de lista de jogos**
    (`detailed` = lista do tema original, `grid` = grade).
 
+<img width="1915" height="1009" alt="Screenshot_3" src="https://github.com/user-attachments/assets/7c35bf37-2d1b-4981-9744-bff26230c6a5" />
+<img width="1024" height="537" alt="screen13" src="https://github.com/user-attachments/assets/84057244-5f57-4586-8b46-df896e6f50e8" />
+<img width="1024" height="541" alt="screen12" src="https://github.com/user-attachments/assets/f1cfb996-dc10-4ff0-b736-7a4b22e4c335" />
