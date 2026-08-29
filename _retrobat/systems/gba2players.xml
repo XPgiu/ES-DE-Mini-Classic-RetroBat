@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- gba2players (RetroBat) usa a arte de "gba" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>gba</artName>
+  </variables>
+</theme>

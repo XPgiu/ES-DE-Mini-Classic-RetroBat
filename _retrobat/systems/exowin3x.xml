@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- exowin3x (RetroBat) usa a arte de "windows3x" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>windows3x</artName>
+  </variables>
+</theme>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esquema de cores: elep (portado de colors.xml do ES-DE) -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <colorSchemeName>elep</colorSchemeName>
+    <backgroundColor>151515</backgroundColor>
+    <sysColor>c8c9c7</sysColor>
+    <systextColor>111111</systextColor>
+    <selectTextColor>52307c</selectTextColor>
+    <sysmenuColor>270e59</sysmenuColor>
+    <primaryColor>8800c7</primaryColor>
+    <secondaryColor>111111</secondaryColor>
+    <selectgameColor>240b3b</selectgameColor>
+    <gamegridColor>52307c</gamegridColor>
+    <selectsysColor>8800c7</selectsysColor>
+    <helpColor>111111</helpColor>
+  </variables>
+</theme>

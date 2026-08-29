@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- openjazz (RetroBat) usa a arte de "dos" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>dos</artName>
+  </variables>
+</theme>

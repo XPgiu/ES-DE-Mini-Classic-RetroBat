@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- gbc2players (RetroBat) usa a arte de "gbc" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>gbc</artName>
+  </variables>
+</theme>

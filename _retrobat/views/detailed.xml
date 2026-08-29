@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Lista de jogos - modo "lista" do ES-DE Mini.
+    Equivale as variantes Snes/Nes/mega/master/psx do tema original.
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="detailed">
+
+    <!-- ============ Barra de titulo ============ -->
+    <image name="titleBar" extra="true">
+      <path>${themePath}/core/images/rec.svg</path>
+      <pos>0.33 0.115</pos>
+      <size>0.66 0.08</size>
+      <origin>0 0</origin>
+      <color>${primaryColor}</color>
+      <zIndex>26</zIndex>
+    </image>
+    <text name="titleName" extra="true">
+      <text>${system.fullName}</text>
+      <pos>0.63 0.155</pos>
+      <size>0.44 0.06</size>
+      <origin>0.5 0.5</origin>
+      <alignment>center</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.035</fontSize>
+      <color>${primaryColor}</color>
+      <autoScroll>horizontal</autoScroll>
+      <zIndex>41</zIndex>
+    </text>
+    <text name="gamelistInfo">
+      <pos>0.975 0.155</pos>
+      <size>0.14 0.06</size>
+      <origin>1 0.5</origin>
+      <alignment>right</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.030</fontSize>
+      <color>${primaryColor}</color>
+      <zIndex>41</zIndex>
+    </text>
+    <text name="folderpath">
+      <pos>0.33 0.100</pos>
+      <size>0.66 0.02</size>
+      <alignment>center</alignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.016</fontSize>
+      <color>${primaryColor}</color>
+      <zIndex>41</zIndex>
+    </text>
+
+    <!-- ============ Lista a esquerda ============ -->
+    <!-- Molduras estaticas das 7 linhas (visual do tema original) -->
+    <image name="row1Fill" extra="true"><path>${themePath}/core/images/rec1.svg</path><pos>0.02 0.1150</pos><size>0.30 0.05</size><origin>0 0</origin><color>${gamegridColor}</color><zIndex>27</zIndex></image>
+    <image name="row1Line" extra="true"><path>${themePath}/core/images/rec.svg</path> <pos>0.02 0.1150</pos><size>0.30 0.05</size><origin>0 0</origin><color>${primaryColor}</color> <zIndex>28</zIndex></image>
+    <image name="row2Fill" extra="true"><path>${themePath}/core/images/rec1.svg</path><pos>0.02 0.1707</pos><size>0.30 0.05</size><origin>0 0</origin><color>${gamegridColor}</color><zIndex>27</zIndex></image>
+    <image name="row2Line" extra="true"><path>${themePath}/core/images/rec.svg</path> <pos>0.02 0.1707</pos><size>0.30 0.05</size><origin>0 0</origin><color>${primaryColor}</color> <zIndex>28</zIndex></image>
+    <image name="row3Fill" extra="true"><path>${themePath}/core/images/rec1.svg</path><pos>0.02 0.2264</pos><size>0.30 0.05</size><origin>0 0</origin><color>${gamegridColor}</color><zIndex>27</zIndex></image>
+    <image name="row3Line" extra="true"><path>${themePath}/core/images/rec.svg</path> <pos>0.02 0.2264</pos><size>0.30 0.05</size><origin>0 0</origin><color>${primaryColor}</color> <zIndex>28</zIndex></image>
+    <image name="row4Fill" extra="true"><path>${themePath}/core/images/rec1.svg</path><pos>0.02 0.2821</pos><size>0.30 0.05</size><origin>0 0</origin><color>${gamegridColor}</color><zIndex>27</zIndex></image>
+    <image name="row4Line" extra="true"><path>${themePath}/core/images/rec.svg</path> <pos>0.02 0.2821</pos><size>0.30 0.05</size><origin>0 0</origin><color>${primaryColor}</color> <zIndex>28</zIndex></image>
+    <image name="row5Fill" extra="true"><path>${themePath}/core/images/rec1.svg</path><pos>0.02 0.3378</pos><size>0.30 0.05</size><origin>0 0</origin><color>${gamegridColor}</color><zIndex>27</zIndex></image>
+    <image name="row5Line" extra="true"><path>${themePath}/core/images/rec.svg</path> <pos>0.02 0.3378</pos><size>0.30 0.05</size><origin>0 0</origin><color>${primaryColor}</color> <zIndex>28</zIndex></image>
+    <image name="row6Fill" extra="true"><path>${themePath}/core/images/rec1.svg</path><pos>0.02 0.3935</pos><size>0.30 0.05</size><origin>0 0</origin><color>${gamegridColor}</color><zIndex>27</zIndex></image>
+    <image name="row6Line" extra="true"><path>${themePath}/core/images/rec.svg</path> <pos>0.02 0.3935</pos><size>0.30 0.05</size><origin>0 0</origin><color>${primaryColor}</color> <zIndex>28</zIndex></image>
+    <image name="row7Fill" extra="true"><path>${themePath}/core/images/rec1.svg</path><pos>0.02 0.4492</pos><size>0.30 0.05</size><origin>0 0</origin><color>${gamegridColor}</color><zIndex>27</zIndex></image>
+    <image name="row7Line" extra="true"><path>${themePath}/core/images/rec.svg</path> <pos>0.02 0.4492</pos><size>0.30 0.05</size><origin>0 0</origin><color>${primaryColor}</color> <zIndex>28</zIndex></image>
+
+    <textlist name="gamelist">
+      <pos>0.02 0.1150</pos>
+      <size>0.30 0.39</size>
+      <lines>7</lines>
+      <alignment>center</alignment>
+      <horizontalMargin>0.012</horizontalMargin>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.020</fontSize>
+      <forceUppercase>true</forceUppercase>
+      <primaryColor>${secondaryColor}</primaryColor>
+      <secondaryColor>${secondaryColor}</secondaryColor>
+      <extraTextColor>${secondaryColor}</extraTextColor>
+      <extraTextSelectedColor>${selectTextColor}</extraTextSelectedColor>
+      <selectedColor>${selectTextColor}</selectedColor>
+      <selectorImage>${themePath}/core/images/rec1.svg</selectorImage>
+      <selectorColor>${selectgameColor}</selectorColor>
+      <scrollSound>${themePath}/core/sounds/scroll.wav</scrollSound>
+      <scrollbarSize>0</scrollbarSize>
+      <zIndex>30</zIndex>
+    </textlist>
+
+    <!-- Capa / disco / cartucho: ocupa todo o espaco livre abaixo da lista
+         (que termina em 0.499) ate a barra inferior do console (0.90). -->
+    <image name="md_thumbnail">
+      <pos>0.17 0.700</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.30 0.375</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>31</zIndex>
+    </image>
+    <image name="md_image">
+      <visible>false</visible>
+    </image>
+
+    <!-- ============ Painel da descricao ============ -->
+    <image name="descBox" extra="true">
+      <path>${themePath}/core/images/metabox1.svg</path>
+      <pos>0.335 0.19</pos>
+      <size>0.20 0.61</size>
+      <origin>0 0</origin>
+      <color>${primaryColor}</color>
+      <zIndex>26</zIndex>
+    </image>
+    <text name="md_description">
+      <pos>0.345 0.215</pos>
+      <size>0.18 0.555</size>
+      <origin>0 0</origin>
+      <alignment>left</alignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.023</fontSize>
+      <lineSpacing>1.05</lineSpacing>
+      <forceUppercase>false</forceUppercase>
+      <color>${primaryColor}</color>
+      <!-- descricoes longas rolam sozinhas em vez de ficarem cortadas -->
+      <autoScroll>vertical</autoScroll>
+      <zIndex>44</zIndex>
+    </text>
+
+    <!-- ============ Midia central ============ -->
+    <!-- Sem moldura desenhada. rectangleback.svg e preenchido (bloco cinza)
+         e rectangle.svg e um contorno de tamanho fixo, que sobrava em volta
+         da midia porque video e screenshot tem proporcoes variadas.
+         A borda agora e feita pelo shader border.glsl aplicada ao proprio
+         md_video: ela acompanha exatamente o tamanho renderizado. -->
+    <image name="md_marquee">
+      <pos>0.66 0.295</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.225 0.19</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>31</zIndex>
+    </image>
+    <video name="md_video">
+      <pos>0.66 0.549</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.235 0.295</maxSize>
+      <delay>1.7</delay>
+      <loops>0</loops>
+      <showSnapshotNoVideo>true</showSnapshotNoVideo>
+      <showSnapshotDelay>true</showSnapshotDelay>
+      <zIndex>32</zIndex>
+      <!-- Borda que se ajusta sozinha ao tamanho real do video/screenshot -->
+      <shader>
+        <path>:/shaders/border.glsl</path>
+        <cornerRadius>0.0</cornerRadius>
+        <borderSize>0.012</borderSize>
+        <borderColor>${primaryColor}</borderColor>
+        <innerShadowSize>0.0</innerShadowSize>
+        <outerShadowSize>0.0</outerShadowSize>
+      </shader>
+    </video>
+
+    <!-- ============ Painel de metadados a direita ============ -->
+    <image name="metaBox" extra="true">
+      <path>${themePath}/core/images/metabox1.svg</path>
+      <pos>0.785 0.19</pos>
+      <size>0.20 0.61</size>
+      <origin>0 0</origin>
+      <color>${primaryColor}</color>
+      <zIndex>26</zIndex>
+    </image>
+    <image name="metaRow1" extra="true"><path>${themePath}/core/images/meta.svg</path><pos>0.79 0.22</pos><size>0.19 0.15</size><origin>0 0</origin><color>${primaryColor}</color><zIndex>28</zIndex></image>
+    <image name="metaRow2" extra="true"><path>${themePath}/core/images/meta.svg</path><pos>0.79 0.32</pos><size>0.19 0.15</size><origin>0 0</origin><color>${primaryColor}</color><zIndex>28</zIndex></image>
+    <image name="metaRow3" extra="true"><path>${themePath}/core/images/meta.svg</path><pos>0.79 0.42</pos><size>0.19 0.15</size><origin>0 0</origin><color>${primaryColor}</color><zIndex>28</zIndex></image>
+    <image name="metaRow4" extra="true"><path>${themePath}/core/images/meta.svg</path><pos>0.79 0.52</pos><size>0.19 0.15</size><origin>0 0</origin><color>${primaryColor}</color><zIndex>28</zIndex></image>
+    <image name="metaRow5" extra="true"><path>${themePath}/core/images/meta.svg</path><pos>0.79 0.62</pos><size>0.19 0.15</size><origin>0 0</origin><color>${primaryColor}</color><zIndex>28</zIndex></image>
+    <image name="metaRow6" extra="true"><path>${themePath}/core/images/meta.svg</path><pos>0.79 0.71</pos><size>0.19 0.15</size><origin>0 0</origin><color>${primaryColor}</color><zIndex>28</zIndex></image>
+
+    <!-- Estilo comum de rotulos e valores.
+         IMPORTANTE: verticalAlignment=bottom, como no tema original. O rotulo
+         encosta no topo da guia diagonal e o valor no fim dela; com o padrao
+         (top) os dois sobem ~0.05 e o valor descola do desenho. -->
+    <text name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount">
+      <size>0.13 0.05</size>
+      <origin>0 0</origin>
+      <alignment>left</alignment>
+      <verticalAlignment>bottom</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.020</fontSize>
+      <forceUppercase>false</forceUppercase>
+      <color>${primaryColor}</color>
+      <zIndex>42</zIndex>
+    </text>
+    <text name="md_developer, md_publisher, md_genre, md_playcount">
+      <size>0.135 0.075</size>
+      <origin>1 0</origin>
+      <alignment>right</alignment>
+      <verticalAlignment>bottom</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.022</fontSize>
+      <lineSpacing>0.85</lineSpacing>
+      <forceUppercase>false</forceUppercase>
+      <color>${primaryColor}</color>
+      <zIndex>42</zIndex>
+    </text>
+    <datetime name="md_releasedate, md_lastplayed">
+      <size>0.135 0.075</size>
+      <origin>1 0</origin>
+      <alignment>right</alignment>
+      <verticalAlignment>bottom</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.022</fontSize>
+      <color>${primaryColor}</color>
+      <zIndex>42</zIndex>
+    </datetime>
+
+    <text     name="md_lbl_releasedate"><pos>0.795 0.185</pos></text>
+    <datetime name="md_releasedate">    <pos>0.975 0.215</pos><format>${dateFormat}</format></datetime>
+    <text     name="md_lbl_developer">  <pos>0.795 0.285</pos></text>
+    <text     name="md_developer">      <pos>0.975 0.290</pos></text>
+    <text     name="md_lbl_publisher">  <pos>0.795 0.385</pos></text>
+    <text     name="md_publisher">      <pos>0.975 0.390</pos></text>
+    <text     name="md_lbl_genre">      <pos>0.795 0.485</pos></text>
+    <text     name="md_genre">          <pos>0.975 0.490</pos></text>
+    <text     name="md_lbl_lastplayed"> <pos>0.795 0.585</pos></text>
+    <datetime name="md_lastplayed">     <pos>0.975 0.595</pos><format>${dateFormat}</format></datetime>
+    <text     name="md_lbl_playcount">  <pos>0.795 0.675</pos></text>
+    <text     name="md_playcount">      <pos>0.975 0.680</pos></text>
+
+    <!-- ============ Barra inferior ============ -->
+    <image name="bottomBar" extra="true">
+      <path>${themePath}/core/images/rec.svg</path>
+      <pos>0.33 0.79</pos>
+      <size>0.66 0.12</size>
+      <origin>0 0</origin>
+      <color>${primaryColor}</color>
+      <zIndex>26</zIndex>
+    </image>
+    <!-- A largura do rating e derivada da altura (5 estrelas), entao so a
+         altura importa aqui: 0.045 => ~0.126 de largura. -->
+    <rating name="md_rating">
+      <pos>0.350 0.848</pos>
+      <size>0.13 0.045</size>
+      <origin>0 0.5</origin>
+      <horizontalAlignment>left</horizontalAlignment>
+      <color>${primaryColor}</color>
+      <unfilledColor>${primaryColor}</unfilledColor>
+      <filledPath>${themePath}/core/images/rating_filled.svg</filledPath>
+      <unfilledPath>${themePath}/core/images/rating_empty.svg</unfilledPath>
+      <zIndex>42</zIndex>
+    </rating>
+    <text name="md_lbl_rating"><visible>false</visible></text>
+
+    <!-- Selos (badges) -->
+    <image name="md_favorite">
+      <path>${themePath}/core/badges/fave.png</path>
+      <pos>0.565 0.848</pos><origin>0.5 0.5</origin><maxSize>0.036 0.050</maxSize>
+      <color>${primaryColor}</color><zIndex>42</zIndex>
+    </image>
+    <image name="md_kidgame">
+      <path>${themePath}/core/badges/kid.png</path>
+      <pos>0.610 0.848</pos><origin>0.5 0.5</origin><maxSize>0.036 0.050</maxSize>
+      <color>${primaryColor}</color><zIndex>42</zIndex>
+    </image>
+    <image name="md_manual">
+      <path>${themePath}/core/badges/manual.png</path>
+      <pos>0.655 0.848</pos><origin>0.5 0.5</origin><maxSize>0.036 0.050</maxSize>
+      <color>${primaryColor}</color><zIndex>42</zIndex>
+    </image>
+    <image name="md_savestate">
+      <path>${themePath}/core/badges/complete.png</path>
+      <pos>0.700 0.848</pos><origin>0.5 0.5</origin><maxSize>0.036 0.050</maxSize>
+      <color>${primaryColor}</color><zIndex>42</zIndex>
+    </image>
+    <image name="md_cheevos">
+      <path>${themePath}/core/badges/control.png</path>
+      <pos>0.745 0.848</pos><origin>0.5 0.5</origin><maxSize>0.036 0.050</maxSize>
+      <color>${primaryColor}</color><zIndex>42</zIndex>
+    </image>
+    <image name="md_nosavestate, md_notcheevos, md_nomanual"><visible>false</visible></image>
+    <image name="md_hidden"><visible>false</visible></image>
+    <!-- Bandeira de regiao: fica DEPOIS das estrelas (que vao ate ~0.476) -->
+    <image name="md_flag">
+      <pos>0.510 0.848</pos><origin>0.5 0.5</origin><maxSize>0.028 0.028</maxSize>
+      <zIndex>42</zIndex>
+    </image>
+
+    <!-- Jogadores -->
+    <text name="md_lbl_players">
+      <pos>0.885 0.848</pos>
+      <size>0.20 0.06</size>
+      <origin>1 0.5</origin>
+      <alignment>right</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.038</fontSize>
+      <color>${primaryColor}</color>
+      <zIndex>42</zIndex>
+    </text>
+    <text name="md_players">
+      <pos>0.895 0.848</pos>
+      <size>0.09 0.06</size>
+      <origin>0 0.5</origin>
+      <alignment>left</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.038</fontSize>
+      <color>${primaryColor}</color>
+      <zIndex>42</zIndex>
+    </text>
+  </view>
+</theme>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esquema de cores: limited (portado de colors.xml do ES-DE) -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <colorSchemeName>limited</colorSchemeName>
+    <backgroundColor>111111</backgroundColor>
+    <sysColor>cec9cc</sysColor>
+    <systextColor>111111</systextColor>
+    <sysmenuColor>cbb700</sysmenuColor>
+    <selectTextColor>cbb700</selectTextColor>
+    <primaryColor>cbb700</primaryColor>
+    <secondaryColor>111111</secondaryColor>
+    <selectgameColor>282400</selectgameColor>
+    <gamegridColor>cbb700</gamegridColor>
+    <selectsysColor>cbb700</selectsysColor>
+    <helpColor>111111</helpColor>
+  </variables>
+</theme>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- singe (RetroBat) usa a arte de "daphne" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>daphne</artName>
+  </variables>
+</theme>

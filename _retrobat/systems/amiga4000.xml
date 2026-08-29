@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- amiga4000 (RetroBat) usa a arte de "amiga1200" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>amiga1200</artName>
+  </variables>
+</theme>

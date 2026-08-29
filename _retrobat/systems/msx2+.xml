@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- msx2+ (RetroBat) usa a arte de "msx2" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>msx2</artName>
+  </variables>
+</theme>

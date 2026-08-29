@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- cplus4 (RetroBat) usa a arte de "plus4" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>plus4</artName>
+  </variables>
+</theme>

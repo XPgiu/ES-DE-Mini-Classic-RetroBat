@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Moldura de console: Master System -->
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="system, basic, detailed, grid, gamecarousel">
+    <image name="frameTop" extra="static">
+      <path>${themePath}/core/master/top.png</path>
+      <pos>0 0</pos>
+      <size>1 0.1</size>
+      <origin>0 0</origin>
+      <tile>false</tile>
+      <color>${sysColor}</color>
+      <zIndex>48</zIndex>
+    </image>
+    <image name="frameBottom" extra="static">
+      <path>${themePath}/core/master/bottom.png</path>
+      <pos>0 0.9</pos>
+      <size>1 0.1</size>
+      <origin>0 0</origin>
+      <tile>false</tile>
+      <color>${sysColor}</color>
+      <zIndex>48</zIndex>
+    </image>
+    <helpsystem name="help">
+      <pos>0.01 0.945</pos>
+      <origin>0 1</origin>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.0145</fontSize>
+      <textColor>DDDDDD</textColor>
+      <iconColor>DDDDDD</iconColor>
+    </helpsystem>
+  </view>
+
+  <view name="screen">
+    <text name="clock">
+      <pos>0.0850 0.0175</pos>
+      <size>0.12 0.05</size>
+      <origin>0 0</origin>
+      <alignment>left</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${altFont}</fontPath>
+      <fontSize>0.0375</fontSize>
+      <color>DDDDDD</color>
+    </text>
+  </view>
+</theme>

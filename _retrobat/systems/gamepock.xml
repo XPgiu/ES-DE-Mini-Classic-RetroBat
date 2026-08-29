@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- gamepock (RetroBat) usa a arte de "gmaster" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>gmaster</artName>
+  </variables>
+</theme>

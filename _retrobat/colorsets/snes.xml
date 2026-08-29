@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esquema de cores: snes (portado de colors.xml do ES-DE) -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <colorSchemeName>snes</colorSchemeName>
+    <backgroundColor>404040</backgroundColor>
+    <sysColor>FFFFFF</sysColor>
+    <systextColor>111111</systextColor>
+    <selectTextColor>808080</selectTextColor>
+    <sysmenuColor>111111</sysmenuColor>
+    <primaryColor>a0a0a0</primaryColor>
+    <secondaryColor>111111</secondaryColor>
+    <selectgameColor>404040</selectgameColor>
+    <gamegridColor>808080</gamegridColor>
+    <selectsysColor>f4000e</selectsysColor>
+    <helpColor>404040</helpColor>
+  </variables>
+</theme>

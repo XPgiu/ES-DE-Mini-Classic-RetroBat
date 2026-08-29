@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esquema de cores: mario (portado de colors.xml do ES-DE) -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <colorSchemeName>grey</colorSchemeName>
+    <backgroundColor>fe0002</backgroundColor>
+    <sysColor>0001FC</sysColor>
+    <systextColor>fe0002</systextColor>
+    <selectTextColor>0001fc</selectTextColor>
+    <sysmenuColor>6a0400</sysmenuColor>
+    <primaryColor>FFd987</primaryColor>
+    <secondaryColor>FFd987</secondaryColor>
+    <selectgameColor>fe0002</selectgameColor>
+    <gamegridColor>0001fc</gamegridColor>
+    <selectsysColor>0001fc</selectsysColor>
+    <helpColor>fe0002</helpColor>
+  </variables>
+</theme>

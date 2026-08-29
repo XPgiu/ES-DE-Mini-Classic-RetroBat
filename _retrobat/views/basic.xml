@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Lista simples (usada quando o sistema nao tem midia raspada).
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="basic">
+    <image name="titleBar" extra="true">
+      <path>${themePath}/core/images/rec.svg</path>
+      <pos>0.17 0.115</pos>
+      <size>0.66 0.08</size>
+      <origin>0 0</origin>
+      <color>${primaryColor}</color>
+      <zIndex>26</zIndex>
+    </image>
+    <text name="titleName" extra="true">
+      <text>${system.fullName}</text>
+      <pos>0.47 0.155</pos>
+      <size>0.44 0.06</size>
+      <origin>0.5 0.5</origin>
+      <alignment>center</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.035</fontSize>
+      <color>${primaryColor}</color>
+      <zIndex>41</zIndex>
+    </text>
+    <text name="gamelistInfo">
+      <pos>0.815 0.155</pos>
+      <size>0.14 0.06</size>
+      <origin>1 0.5</origin>
+      <alignment>right</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.030</fontSize>
+      <color>${primaryColor}</color>
+      <zIndex>41</zIndex>
+    </text>
+
+    <image name="listBox" extra="true">
+      <path>${themePath}/core/images/metabox1.svg</path>
+      <pos>0.17 0.215</pos>
+      <size>0.66 0.66</size>
+      <origin>0 0</origin>
+      <color>${primaryColor}</color>
+      <zIndex>26</zIndex>
+    </image>
+    <textlist name="gamelist">
+      <pos>0.185 0.235</pos>
+      <size>0.63 0.62</size>
+      <lines>12</lines>
+      <alignment>center</alignment>
+      <horizontalMargin>0.02</horizontalMargin>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.028</fontSize>
+      <forceUppercase>true</forceUppercase>
+      <primaryColor>${primaryColor}</primaryColor>
+      <secondaryColor>${primaryColor}</secondaryColor>
+      <extraTextColor>${gamegridColor}</extraTextColor>
+      <extraTextSelectedColor>${selectTextColor}</extraTextSelectedColor>
+      <selectedColor>${selectTextColor}</selectedColor>
+      <selectorImage>${themePath}/core/images/rec1.svg</selectorImage>
+      <selectorColor>${selectgameColor}</selectorColor>
+      <scrollSound>${themePath}/core/sounds/scroll.wav</scrollSound>
+      <scrollbarColor>${primaryColor}80</scrollbarColor>
+      <scrollbarSize>0.005</scrollbarSize>
+      <scrollbarAlignment>outerright</scrollbarAlignment>
+      <zIndex>30</zIndex>
+    </textlist>
+  </view>
+</theme>

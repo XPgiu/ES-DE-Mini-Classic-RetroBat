@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sgb-msu1 (RetroBat) usa a arte de "sgb" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>sgb</artName>
+  </variables>
+</theme>

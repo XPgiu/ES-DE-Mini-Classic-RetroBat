@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esquema de cores: fami (portado de colors.xml do ES-DE) -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <colorSchemeName>fami</colorSchemeName>
+    <backgroundColor>561420</backgroundColor>
+    <sysColor>c59a6f</sysColor>
+    <systextColor>561420</systextColor>
+    <selectTextColor>c59a6f</selectTextColor>
+    <sysmenuColor>ce9b58</sysmenuColor>
+    <primaryColor>c59a6f</primaryColor>
+    <secondaryColor>561420</secondaryColor>
+    <selectgameColor>561420</selectgameColor>
+    <gamegridColor>c59a6f</gamegridColor>
+    <selectsysColor>c59a6f</selectsysColor>
+    <helpColor>561420</helpColor>
+  </variables>
+</theme>

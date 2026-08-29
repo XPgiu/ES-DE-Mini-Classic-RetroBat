@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esquema de cores: usnesa (portado de colors.xml do ES-DE) -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <colorSchemeName>usnesa</colorSchemeName>
+    <backgroundColor>cec9cc</backgroundColor>
+    <sysColor>FFFFFF</sysColor>
+    <systextColor>111111</systextColor>
+    <selectTextColor>111111</selectTextColor>
+    <sysmenuColor>111111</sysmenuColor>
+    <primaryColor>4f43ae</primaryColor>
+    <secondaryColor>111111</secondaryColor>
+    <selectgameColor>4f43ae</selectgameColor>
+    <gamegridColor>908a99</gamegridColor>
+    <selectsysColor>4f43ae</selectsysColor>
+    <helpColor>404040</helpColor>
+  </variables>
+</theme>

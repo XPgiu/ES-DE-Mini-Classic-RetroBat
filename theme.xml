@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    ES-DE Mini Classic  -  port para RetroBat / Batocera EmulationStation
+    Tema original: Stuart Learmonth (ESDE-Mini para ES-DE)
+    Licenca: Creative Commons CC-BY-NC-SA
+
+    O tema.xml original do ES-DE foi preservado em ./theme-esde.xml (nao e lido
+    pelo RetroBat). Toda a implementacao para o EmulationStation do RetroBat
+    fica em ./_retrobat/.
+-->
+<theme defaultView="detailed">
+  <formatVersion>7</formatVersion>
+
+  <variables>
+    <!-- Fontes -->
+    <primaryFont>${themePath}/core/fonts/berlin.ttf</primaryFont>
+    <secondaryFont>${themePath}/core/fonts/berlinb.ttf</secondaryFont>
+    <altFont>${themePath}/core/fonts/upheavtt.ttf</altFont>
+
+    <!-- Nomes exibidos no menu "Configuracao do tema" -->
+    <subset.colorset>Esquema de cores</subset.colorset>
+    <subset.console>Console (moldura)</subset.console>
+    <subset.watermark>Marca d'agua do sistema</subset.watermark>
+    <subset.sysart>Ilustracao do console</subset.sysart>
+    <yes>Sim</yes>
+    <no>Nao</no>
+
+    <!-- Rotulos (sobrescritos por ./_retrobat/lang/*.xml) -->
+    <lblContains>CONTEM</lblContains>
+    <lblIncluding>INCLUINDO:</lblIncluding>
+    <lblReleased>Lancamento</lblReleased>
+    <lblDeveloper>Desenvolvedor</lblDeveloper>
+    <lblPublisher>Publicadora</lblPublisher>
+    <lblGenre>Genero</lblGenre>
+    <lblLastPlayed>Jogado em</lblLastPlayed>
+    <lblPlayCount>Partidas</lblPlayCount>
+    <lblPlayers>Jogadores</lblPlayers>
+    <dateFormat>%d/%m/%Y</dateFormat>
+
+    <!-- Nome da arte usada por este sistema. Vazio por padrao: quando o nome do
+         sistema do RetroBat ja bate com o nome do arquivo de arte, o primeiro
+         <path> resolve. Sistemas com nome diferente definem ${artName} em
+         ./_retrobat/systems/<sistema>.xml e o segundo <path> vence. -->
+    <artName></artName>
+  </variables>
+
+  <!-- Idioma -->
+  <include>./_retrobat/lang/en.xml</include>
+  <include lang="pt_BR">./_retrobat/lang/pt_BR.xml</include>
+  <include lang="pt">./_retrobat/lang/pt_BR.xml</include>
+  <include lang="br">./_retrobat/lang/pt_BR.xml</include>
+  <include lang="es">./_retrobat/lang/es.xml</include>
+  <include lang="fr">./_retrobat/lang/fr.xml</include>
+
+  <!-- Mapeamento nome-do-sistema-RetroBat -> nome-do-arquivo-de-arte (opcional) -->
+  <include>./_retrobat/systems/${system.theme}.xml</include>
+
+  <!-- Esquemas de cores (precisam vir ANTES das views) -->
+  <subset name="colorset" displayName="${subset.colorset}">
+    <include name="snes"     displayName="SNES">./_retrobat/colorsets/snes.xml</include>
+    <include name="usnesa"   displayName="USNESA">./_retrobat/colorsets/usnesa.xml</include>
+    <include name="nes"      displayName="NES">./_retrobat/colorsets/nes.xml</include>
+    <include name="fami"     displayName="Famicom">./_retrobat/colorsets/fami.xml</include>
+    <include name="sega"     displayName="Sega">./_retrobat/colorsets/sega.xml</include>
+    <include name="master"   displayName="Master System">./_retrobat/colorsets/master.xml</include>
+    <include name="hyst"     displayName="Hystoria">./_retrobat/colorsets/hyst.xml</include>
+    <include name="hystalt"  displayName="Hystoria ALT">./_retrobat/colorsets/hystalt.xml</include>
+    <include name="limited"  displayName="Limited Edition">./_retrobat/colorsets/limited.xml</include>
+    <include name="mario"    displayName="Its a Mario">./_retrobat/colorsets/mario.xml</include>
+    <include name="elep"     displayName="Mrs LEphant">./_retrobat/colorsets/elep.xml</include>
+    <include name="gold"     displayName="Gold">./_retrobat/colorsets/gold.xml</include>
+  </subset>
+
+  <!-- Views -->
+  <include>./_retrobat/views/screen.xml</include>
+  <include>./_retrobat/views/menu.xml</include>
+  <include>./_retrobat/views/common.xml</include>
+  <include>./_retrobat/views/system.xml</include>
+  <include>./_retrobat/views/basic.xml</include>
+  <include>./_retrobat/views/detailed.xml</include>
+  <include>./_retrobat/views/grid.xml</include>
+  <include>./_retrobat/views/gamecarousel.xml</include>
+
+  <!-- Moldura do console: vem DEPOIS das views porque sobrepoe barras,
+       o logo ES-DE, o relogio e a posicao do help. -->
+  <subset name="console" displayName="${subset.console}">
+    <include name="snes"   displayName="Super Nintendo">./_retrobat/consoles/snes.xml</include>
+    <include name="usnesa" displayName="Super Nintendo (US)">./_retrobat/consoles/usnesa.xml</include>
+    <include name="nes"    displayName="Nintendo">./_retrobat/consoles/nes.xml</include>
+    <include name="mega"   displayName="Mega Drive">./_retrobat/consoles/mega.xml</include>
+    <include name="master" displayName="Master System">./_retrobat/consoles/master.xml</include>
+    <include name="psx"    displayName="PlayStation">./_retrobat/consoles/psx.xml</include>
+  </subset>
+
+  <!-- Opcionais -->
+  <subset name="watermark" displayName="${subset.watermark}">
+    <include name="yes" displayName="${yes}"/>
+    <include name="no"  displayName="${no}">./_retrobat/views/nowatermark.xml</include>
+  </subset>
+  <subset name="sysart" displayName="${subset.sysart}">
+    <include name="yes" displayName="${yes}"/>
+    <include name="no"  displayName="${no}">./_retrobat/views/nosysart.xml</include>
+  </subset>
+
+  <!-- Sons de navegacao -->
+  <feature supported="navigationsounds">
+    <view name="all">
+      <sound name="systembrowse"><path>${themePath}/core/sounds/systembrowse.wav</path></sound>
+      <sound name="quicksysselect"><path>${themePath}/core/sounds/systembrowse.wav</path></sound>
+      <sound name="select"><path>${themePath}/core/sounds/select.wav</path></sound>
+      <sound name="back"><path>${themePath}/core/sounds/back.wav</path></sound>
+      <sound name="scroll"><path>${themePath}/core/sounds/scroll.wav</path></sound>
+      <sound name="favorite"><path>${themePath}/core/sounds/favorite.wav</path></sound>
+      <sound name="launch"><path>${themePath}/core/sounds/launch.wav</path></sound>
+    </view>
+  </feature>
+</theme>

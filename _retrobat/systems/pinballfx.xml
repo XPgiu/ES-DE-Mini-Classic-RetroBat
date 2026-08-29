@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- pinballfx (RetroBat) usa a arte de "fpinball" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>fpinball</artName>
+  </variables>
+</theme>

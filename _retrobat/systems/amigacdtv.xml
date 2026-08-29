@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- amigacdtv (RetroBat) usa a arte de "cdtv" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>cdtv</artName>
+  </variables>
+</theme>

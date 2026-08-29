@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Lista de jogos - modo "grade" do ES-DE Mini.
+    Equivale as variantes *grid do tema original: painel de informacoes a
+    esquerda e grade de capas a direita.
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="grid">
+
+    <!-- ============ Painel esquerdo ============ -->
+    <image name="titleBar" extra="true">
+      <path>${themePath}/core/images/rec.svg</path>
+      <pos>0.225 0.14</pos>
+      <size>0.44 0.07</size>
+      <origin>0.5 0.5</origin>
+      <color>${primaryColor}</color>
+      <zIndex>26</zIndex>
+    </image>
+    <text name="titleName" extra="true">
+      <text>${system.fullName}</text>
+      <pos>0.225 0.14</pos>
+      <size>0.42 0.06</size>
+      <origin>0.5 0.5</origin>
+      <alignment>center</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.032</fontSize>
+      <color>${primaryColor}</color>
+      <autoScroll>horizontal</autoScroll>
+      <zIndex>41</zIndex>
+    </text>
+    <text name="gamelistInfo">
+      <pos>0.225 0.196</pos>
+      <size>0.42 0.035</size>
+      <origin>0.5 0.5</origin>
+      <alignment>center</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.024</fontSize>
+      <color>${primaryColor}</color>
+      <zIndex>41</zIndex>
+    </text>
+
+    <!-- Sem moldura desenhada: a borda vem do shader border.glsl aplicado ao
+         proprio md_video, entao acompanha o tamanho real da midia. -->
+    <video name="md_video">
+      <pos>0.225 0.35</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.42 0.29</maxSize>
+      <delay>1.7</delay>
+      <loops>0</loops>
+      <showSnapshotNoVideo>true</showSnapshotNoVideo>
+      <showSnapshotDelay>true</showSnapshotDelay>
+      <zIndex>32</zIndex>
+      <shader>
+        <path>:/shaders/border.glsl</path>
+        <cornerRadius>0.0</cornerRadius>
+        <borderSize>0.012</borderSize>
+        <borderColor>${primaryColor}</borderColor>
+        <innerShadowSize>0.0</innerShadowSize>
+        <outerShadowSize>0.0</outerShadowSize>
+      </shader>
+    </video>
+    <image name="md_marquee, md_thumbnail, md_image"><visible>false</visible></image>
+
+    <image name="descBox" extra="true">
+      <path>${themePath}/core/images/metabox1.svg</path>
+      <pos>0.225 0.66</pos>
+      <size>0.44 0.26</size>
+      <origin>0.5 0.5</origin>
+      <color>${primaryColor}</color>
+      <zIndex>26</zIndex>
+    </image>
+    <text name="md_description">
+      <pos>0.225 0.66</pos>
+      <size>0.41 0.23</size>
+      <origin>0.5 0.5</origin>
+      <alignment>left</alignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.023</fontSize>
+      <lineSpacing>1.05</lineSpacing>
+      <forceUppercase>false</forceUppercase>
+      <color>${primaryColor}</color>
+      <autoScroll>vertical</autoScroll>
+      <zIndex>44</zIndex>
+    </text>
+
+    <!-- Barra inferior do painel -->
+    <image name="bottomBar" extra="true">
+      <path>${themePath}/core/images/rec.svg</path>
+      <pos>0.225 0.845</pos>
+      <size>0.44 0.09</size>
+      <origin>0.5 0.5</origin>
+      <color>${primaryColor}</color>
+      <zIndex>26</zIndex>
+    </image>
+    <!-- A largura do rating e derivada da altura (5 estrelas) -->
+    <rating name="md_rating">
+      <pos>0.030 0.845</pos>
+      <size>0.11 0.038</size>
+      <origin>0 0.5</origin>
+      <horizontalAlignment>left</horizontalAlignment>
+      <color>${primaryColor}</color>
+      <unfilledColor>${primaryColor}</unfilledColor>
+      <filledPath>${themePath}/core/images/rating_filled.svg</filledPath>
+      <unfilledPath>${themePath}/core/images/rating_empty.svg</unfilledPath>
+      <zIndex>42</zIndex>
+    </rating>
+    <text name="md_lbl_rating"><visible>false</visible></text>
+
+    <image name="md_favorite">
+      <path>${themePath}/core/badges/fave.png</path>
+      <pos>0.195 0.845</pos><origin>0.5 0.5</origin><maxSize>0.030 0.042</maxSize>
+      <color>${primaryColor}</color><zIndex>42</zIndex>
+    </image>
+    <image name="md_kidgame">
+      <path>${themePath}/core/badges/kid.png</path>
+      <pos>0.230 0.845</pos><origin>0.5 0.5</origin><maxSize>0.030 0.042</maxSize>
+      <color>${primaryColor}</color><zIndex>42</zIndex>
+    </image>
+    <image name="md_manual">
+      <path>${themePath}/core/badges/manual.png</path>
+      <pos>0.265 0.845</pos><origin>0.5 0.5</origin><maxSize>0.030 0.042</maxSize>
+      <color>${primaryColor}</color><zIndex>42</zIndex>
+    </image>
+    <image name="md_savestate">
+      <path>${themePath}/core/badges/complete.png</path>
+      <pos>0.300 0.845</pos><origin>0.5 0.5</origin><maxSize>0.030 0.042</maxSize>
+      <color>${primaryColor}</color><zIndex>42</zIndex>
+    </image>
+    <image name="md_cheevos">
+      <path>${themePath}/core/badges/control.png</path>
+      <pos>0.335 0.845</pos><origin>0.5 0.5</origin><maxSize>0.030 0.042</maxSize>
+      <color>${primaryColor}</color><zIndex>42</zIndex>
+    </image>
+    <image name="md_nosavestate, md_notcheevos, md_nomanual, md_hidden"><visible>false</visible></image>
+    <!-- Bandeira de regiao: DEPOIS das estrelas (que vao ate ~0.136) -->
+    <image name="md_flag">
+      <pos>0.160 0.845</pos><origin>0.5 0.5</origin><maxSize>0.024 0.024</maxSize>
+      <zIndex>42</zIndex>
+    </image>
+    <text name="md_lbl_players">
+      <pos>0.395 0.845</pos>
+      <size>0.16 0.05</size>
+      <origin>1 0.5</origin>
+      <alignment>right</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.026</fontSize>
+      <color>${primaryColor}</color>
+      <zIndex>42</zIndex>
+    </text>
+    <text name="md_players">
+      <pos>0.403 0.845</pos>
+      <size>0.05 0.05</size>
+      <origin>0 0.5</origin>
+      <alignment>left</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.026</fontSize>
+      <color>${primaryColor}</color>
+      <zIndex>42</zIndex>
+    </text>
+
+    <!-- Metadados textuais ficam ocultos nesta view -->
+    <text name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_publisher, md_genre, md_playcount">
+      <visible>false</visible>
+    </text>
+    <datetime name="md_releasedate, md_lastplayed"><visible>false</visible></datetime>
+
+    <!-- ============ Grade de capas ============ -->
+    <imagegrid name="gamegrid">
+      <pos>0.455 0.105</pos>
+      <size>0.535 0.785</size>
+      <margin>0.008 0.014</margin>
+      <padding>0.01 0.01 0.01 0.01</padding>
+      <autoLayout>4 3</autoLayout>
+      <autoLayout verticalScreen="true">3 4</autoLayout>
+      <animateSelection>true</animateSelection>
+      <centerSelection>false</centerSelection>
+      <scrollDirection>vertical</scrollDirection>
+      <scrollbarColor>${primaryColor}80</scrollbarColor>
+      <scrollbarSize>0.005</scrollbarSize>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <zIndex>30</zIndex>
+    </imagegrid>
+    <gridtile name="default">
+      <backgroundColor>00000000</backgroundColor>
+      <backgroundCornerSize>8 8</backgroundCornerSize>
+      <selectionMode>image</selectionMode>
+      <padding>6 6</padding>
+      <imageColor>FFFFFFC0</imageColor>
+    </gridtile>
+    <gridtile name="selected">
+      <backgroundCenterColor>${selectgameColor}</backgroundCenterColor>
+      <backgroundEdgeColor>${selectsysColor}</backgroundEdgeColor>
+      <imageColor>FFFFFFFF</imageColor>
+    </gridtile>
+    <image name="gridtile.image">
+      <linearSmooth>true</linearSmooth>
+    </image>
+    <text name="gridtile">
+      <color>${gamegridColor}</color>
+      <backgroundColor>00000000</backgroundColor>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.020</fontSize>
+      <alignment>center</alignment>
+      <size>1 0.22</size>
+    </text>
+    <text name="gridtile:selected">
+      <color>${selectsysColor}</color>
+    </text>
+  </view>
+</theme>

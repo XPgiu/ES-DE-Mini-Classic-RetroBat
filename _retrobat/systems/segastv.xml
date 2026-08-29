@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- segastv (RetroBat) usa a arte de "stv" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>stv</artName>
+  </variables>
+</theme>

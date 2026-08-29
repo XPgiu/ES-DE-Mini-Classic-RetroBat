@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- teknoparrot (RetroBat) usa a arte de "pcarcade" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>pcarcade</artName>
+  </variables>
+</theme>

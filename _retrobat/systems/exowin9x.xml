@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- exowin9x (RetroBat) usa a arte de "windows9x" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>windows9x</artName>
+  </variables>
+</theme>

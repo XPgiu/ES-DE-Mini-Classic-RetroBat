@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <subset.colorset>Esquema de cores</subset.colorset>
+    <subset.console>Console (moldura)</subset.console>
+    <subset.watermark>Marca d'agua do sistema</subset.watermark>
+    <subset.sysart>Ilustracao do console</subset.sysart>
+    <yes>Sim</yes>
+    <no>Nao</no>
+
+    <lblContains>CONTEM</lblContains>
+    <lblIncluding>INCLUINDO:</lblIncluding>
+    <lblReleased>Lancamento</lblReleased>
+    <lblDeveloper>Desenvolvedor</lblDeveloper>
+    <lblPublisher>Publicadora</lblPublisher>
+    <lblGenre>Genero</lblGenre>
+    <lblLastPlayed>Jogado em</lblLastPlayed>
+    <lblPlayCount>Partidas</lblPlayCount>
+    <lblPlayers>Jogadores</lblPlayers>
+    <dateFormat>%d/%m/%Y</dateFormat>
+  </variables>
+</theme>

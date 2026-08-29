@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esquema de cores: sega (portado de colors.xml do ES-DE) -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <colorSchemeName>sega</colorSchemeName>
+    <backgroundColor>BBBBBB</backgroundColor>
+    <sysColor>AAAAAA</sysColor>
+    <systextColor>12457C</systextColor>
+    <sysmenuColor>FFFFFF</sysmenuColor>
+    <selectTextColor>DDDDDD</selectTextColor>
+    <primaryColor>0755ab</primaryColor>
+    <secondaryColor>17569B</secondaryColor>
+    <selectgameColor>17569B</selectgameColor>
+    <gamegridColor>DDDDDD</gamegridColor>
+    <selectsysColor>17569B</selectsysColor>
+    <helpColor>12457c</helpColor>
+  </variables>
+</theme>

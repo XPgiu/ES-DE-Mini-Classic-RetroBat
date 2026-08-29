@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esquema de cores: hyst (portado de colors.xml do ES-DE) -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <colorSchemeName>hyst</colorSchemeName>
+    <backgroundColor>1c4a26</backgroundColor>
+    <sysColor>b19b4c</sysColor>
+    <systextColor>111111</systextColor>
+    <sysmenuColor>ce9b58</sysmenuColor>
+    <selectTextColor>ce9b58</selectTextColor>
+    <primaryColor>ce9b58</primaryColor>
+    <secondaryColor>1c4a26</secondaryColor>
+    <selectgameColor>1c4a26</selectgameColor>
+    <gamegridColor>ce9b58</gamegridColor>
+    <selectsysColor>ce9b58</selectsysColor>
+    <helpColor>111111</helpColor>
+  </variables>
+</theme>

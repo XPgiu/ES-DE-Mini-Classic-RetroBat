@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <subset.colorset>Jeu de couleurs</subset.colorset>
+    <subset.console>Cadre console</subset.console>
+    <subset.watermark>Filigrane systeme</subset.watermark>
+    <subset.sysart>Illustration console</subset.sysart>
+    <yes>Oui</yes>
+    <no>Non</no>
+
+    <lblContains>CONTIENT</lblContains>
+    <lblIncluding>DONT:</lblIncluding>
+    <lblReleased>Sortie</lblReleased>
+    <lblDeveloper>Developpeur</lblDeveloper>
+    <lblPublisher>Editeur</lblPublisher>
+    <lblGenre>Genre</lblGenre>
+    <lblLastPlayed>Derniere partie</lblLastPlayed>
+    <lblPlayCount>Parties</lblPlayCount>
+    <lblPlayers>Joueurs</lblPlayers>
+    <dateFormat>%d/%m/%Y</dateFormat>
+  </variables>
+</theme>

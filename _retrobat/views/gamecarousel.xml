@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Carrossel de jogos (view "gamecarousel" do EmulationStation do RetroBat).
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="gamecarousel">
+    <image name="titleBar" extra="true">
+      <path>${themePath}/core/images/rec.svg</path>
+      <pos>0.17 0.115</pos>
+      <size>0.66 0.08</size>
+      <origin>0 0</origin>
+      <color>${primaryColor}</color>
+      <zIndex>26</zIndex>
+    </image>
+    <text name="titleName" extra="true">
+      <text>${system.fullName}</text>
+      <pos>0.47 0.155</pos>
+      <size>0.44 0.06</size>
+      <origin>0.5 0.5</origin>
+      <alignment>center</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.035</fontSize>
+      <color>${primaryColor}</color>
+      <zIndex>41</zIndex>
+    </text>
+    <text name="gamelistInfo">
+      <pos>0.815 0.155</pos>
+      <size>0.14 0.06</size>
+      <origin>1 0.5</origin>
+      <alignment>right</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.030</fontSize>
+      <color>${primaryColor}</color>
+      <zIndex>41</zIndex>
+    </text>
+
+    <carousel name="gamecarousel">
+      <type>horizontal</type>
+      <pos>0 0.24</pos>
+      <size>1 0.42</size>
+      <color>00000000</color>
+      <colorEnd>00000000</colorEnd>
+      <logoSize>0.20 0.38</logoSize>
+      <logoScale>1.15</logoScale>
+      <maxLogoCount>5</maxLogoCount>
+      <scrollSound>${themePath}/core/sounds/scroll.wav</scrollSound>
+      <zIndex>30</zIndex>
+    </carousel>
+    <text name="logoText">
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.026</fontSize>
+      <color>${primaryColor}</color>
+      <forceUppercase>true</forceUppercase>
+    </text>
+
+    <text name="md_description">
+      <pos>0.5 0.735</pos>
+      <size>0.62 0.14</size>
+      <origin>0.5 0.5</origin>
+      <alignment>center</alignment>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.023</fontSize>
+      <forceUppercase>false</forceUppercase>
+      <color>${primaryColor}</color>
+      <zIndex>44</zIndex>
+    </text>
+    <rating name="md_rating">
+      <pos>0.5 0.845</pos>
+      <size>0.08 0.05</size>
+      <origin>0.5 0.5</origin>
+      <horizontalAlignment>center</horizontalAlignment>
+      <color>${primaryColor}</color>
+      <unfilledColor>${primaryColor}</unfilledColor>
+      <filledPath>${themePath}/core/images/rating_filled.svg</filledPath>
+      <unfilledPath>${themePath}/core/images/rating_empty.svg</unfilledPath>
+      <zIndex>42</zIndex>
+    </rating>
+    <text name="md_lbl_rating"><visible>false</visible></text>
+  </view>
+</theme>

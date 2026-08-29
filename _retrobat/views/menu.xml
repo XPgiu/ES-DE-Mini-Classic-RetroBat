@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Menus do EmulationStation, tingidos pelo esquema de cores escolhido.
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="menu">
+    <menuBackground name="menubg">
+      <path>${themePath}/core/images/frame.png</path>
+      <color>${backgroundColor}</color>
+      <cornerSize>16 16</cornerSize>
+      <scrollbarColor>${primaryColor}60</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.004</scrollbarSize>
+      <scrollbarAlignment>innerright</scrollbarAlignment>
+    </menuBackground>
+    <menuTitle name="menutitle">
+      <fontPath>${altFont}</fontPath>
+      <fontSize>0.045</fontSize>
+      <color>${primaryColor}</color>
+    </menuTitle>
+    <menuText name="menutitle">
+      <fontPath>${altFont}</fontPath>
+      <fontSize>0.038</fontSize>
+      <color>${primaryColor}</color>
+    </menuText>
+    <menuText name="menufooter">
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.020</fontSize>
+      <color>${gamegridColor}</color>
+    </menuText>
+    <menuText name="menutext">
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.026</fontSize>
+      <color>${primaryColor}</color>
+      <selectedColor>${selectTextColor}</selectedColor>
+      <selectorColor>${selectgameColor}</selectorColor>
+      <selectorColorEnd>${selectsysColor}</selectorColorEnd>
+      <selectorGradientType>horizontal</selectorGradientType>
+      <separatorColor>${primaryColor}30</separatorColor>
+    </menuText>
+    <menuTextSmall name="menutextsmall">
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.018</fontSize>
+      <color>${gamegridColor}</color>
+    </menuTextSmall>
+    <menuGroup name="menugroup">
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.020</fontSize>
+      <color>${selectsysColor}</color>
+      <backgroundColor>00000000</backgroundColor>
+      <lineSpacing>2.4</lineSpacing>
+    </menuGroup>
+    <menuGrid name="menugrid">
+      <separatorColor>${primaryColor}20</separatorColor>
+    </menuGrid>
+    <menuSwitch name="menuswitch">
+      <pathOn>:/on.svg</pathOn>
+      <pathOff>:/off.svg</pathOff>
+    </menuSwitch>
+    <menuSlider name="menuslider">
+      <path>:/slider_knob.svg</path>
+    </menuSlider>
+    <menuButton name="menubutton">
+      <path>${themePath}/core/images/rec.svg</path>
+      <filledPath>${themePath}/core/images/rec1.svg</filledPath>
+      <cornerSize>8 8</cornerSize>
+    </menuButton>
+  </view>
+</theme>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <subset.colorset>Color scheme</subset.colorset>
+    <subset.console>Console frame</subset.console>
+    <subset.watermark>System watermark</subset.watermark>
+    <subset.sysart>Console artwork</subset.sysart>
+    <yes>Yes</yes>
+    <no>No</no>
+
+    <lblContains>CONTAINS</lblContains>
+    <lblIncluding>INCLUDING:</lblIncluding>
+    <lblReleased>Released</lblReleased>
+    <lblDeveloper>Developer</lblDeveloper>
+    <lblPublisher>Publisher</lblPublisher>
+    <lblGenre>Genre</lblGenre>
+    <lblLastPlayed>Last Played</lblLastPlayed>
+    <lblPlayCount>Times Played</lblPlayCount>
+    <lblPlayers>Players</lblPlayers>
+    <dateFormat>%m/%d/%Y</dateFormat>
+  </variables>
+</theme>

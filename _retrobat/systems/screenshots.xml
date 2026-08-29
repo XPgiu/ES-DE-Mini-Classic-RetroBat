@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- screenshots (RetroBat) usa a arte de "now-playing" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>now-playing</artName>
+  </variables>
+</theme>

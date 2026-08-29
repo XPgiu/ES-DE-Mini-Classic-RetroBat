@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Tela de sistemas (carrossel de "cartuchos" ES-DE Mini).
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="system">
+
+    <!-- Ilustracao grande do console, a esquerda -->
+    <image name="sysart" extra="true">
+      <path>${themePath}/core/systems/${system.theme}.svg</path>
+      <path>${themePath}/core/systems/${artName}.svg</path>
+      <pos>0.19 0.310</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.33 0.36</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>15</zIndex>
+    </image>
+
+    <!-- Bloco de texto a direita - encolhido para dar espaco as capas -->
+    <text name="sysName" extra="true">
+      <text>${system.fullName}</text>
+      <pos>0.395 0.125</pos>
+      <size>0.245 0.035</size>
+      <origin>0 0.5</origin>
+      <alignment>left</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${altFont}</fontPath>
+      <fontSize>0.020</fontSize>
+      <forceUppercase>true</forceUppercase>
+      <color>${primaryColor}</color>
+      <autoScroll>horizontal</autoScroll>
+      <zIndex>40</zIndex>
+    </text>
+
+    <text name="sysCount" extra="true">
+      <text>${lblContains} {binding:total}</text>
+      <pos>0.395 0.160</pos>
+      <size>0.245 0.035</size>
+      <origin>0 0.5</origin>
+      <alignment>left</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${altFont}</fontPath>
+      <fontSize>0.020</fontSize>
+      <forceUppercase>true</forceUppercase>
+      <color>${primaryColor}</color>
+      <zIndex>40</zIndex>
+    </text>
+
+    <text name="sysIncluding" extra="true">
+      <text>${lblIncluding}</text>
+      <pos>0.395 0.195</pos>
+      <size>0.245 0.035</size>
+      <origin>0 0.5</origin>
+      <alignment>left</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${altFont}</fontPath>
+      <fontSize>0.020</fontSize>
+      <forceUppercase>true</forceUppercase>
+      <color>${primaryColor}</color>
+      <zIndex>40</zIndex>
+    </text>
+
+    <!-- ===== Destaque "INCLUINDO:" =====
+         3 capas de disco/caixa sorteadas, em leque (como o "3D box" que o
+         ScreenScraper ja raspa para essa colecao).
+
+         IMPORTANTE sobre a ordem dos <path>: o ES usa o ULTIMO caminho que
+         existir no disco, nao o primeiro. thumbnail (capa) fica por ULTIMO
+         de proposito, para vencer sempre que existir; image (screenshot)
+         so aparece quando aquele jogo sorteado nao tem capa raspada.
+
+         ATENCAO (limitacao do motor, nao do tema): cada token {random...} e
+         resolvido de forma independente em SystemView::getViewElements(),
+         entao as 3 capas SEMPRE sao de jogos diferentes entre si - nao ha
+         como forcar as 3 a serem do mesmo jogo, mas aqui isso e o efeito
+         desejado (o pedido era justamente "nao tem importancia serem
+         diferentes"). As 3 trocam de jogo sempre que voce entra/sai deste
+         sistema no carrossel. NAO existe recurso no motor para trocar
+         sozinho num timer enquanto a tela fica parada (o unico "slideshow"
+         do ES e o protetor de tela de inatividade, algo totalmente
+         separado) - so re-sorteiam ao navegar.
+
+         SO capa, nunca screenshot: removido o fallback para
+         {random:image}. Nao existe no motor um jeito de "sortear de novo
+         ate achar um jogo com capa" (conferido nas strings do binario -
+         so 6 variantes de {random...} existem, nenhuma com filtro por
+         midia disponivel). Sem o fallback, um jogo sem capa raspada
+         simplesmente deixa aquele slot em branco, em vez de mostrar a
+         screenshot dele no lugar. -->
+    <!-- Animacao de entrada: conferido nas strings do proprio emulationstation.exe
+         que os nomes reais sao "pos"/"scale"/"color" (nao "position"/"opacity"
+         como em outras forks de ES) e que os modos de easing validos sao
+         linear/easein/easeincubic/easeinquint/easeout/easeoutcubic/
+         easeoutquint/easeinout, no atributo easingMode (nao "mode"). A capa
+         central entra primeiro (begin=0); as laterais entram logo depois
+         (begin=90/90) e de um pouco mais longe, dando a sensacao de "leque
+         se abrindo" a partir do centro. -->
+    <image name="randomCoverL" extra="true">
+      <path>{random:thumbnail}</path>
+      <pos>0.570 0.340</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.22 0.333</maxSize>
+      <rotation>-14</rotation>
+      <rotationOrigin>0.5 0.5</rotationOrigin>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>39</zIndex>
+      <storyboard>
+        <animation property="pos" from="0.610 0.340" to="0.570 0.340" begin="90" duration="420" easingMode="easeoutcubic"/>
+        <animation property="scale" from="0.75" to="1" begin="90" duration="420" easingMode="easeoutcubic"/>
+        <animation property="color" from="FFFFFF00" to="FFFFFFFF" begin="90" duration="320" easingMode="easeout"/>
+      </storyboard>
+    </image>
+
+    <image name="randomCoverR" extra="true">
+      <path>{random:thumbnail}</path>
+      <pos>0.870 0.340</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.22 0.333</maxSize>
+      <rotation>14</rotation>
+      <rotationOrigin>0.5 0.5</rotationOrigin>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>39</zIndex>
+      <storyboard>
+        <animation property="pos" from="0.830 0.340" to="0.870 0.340" begin="90" duration="420" easingMode="easeoutcubic"/>
+        <animation property="scale" from="0.75" to="1" begin="90" duration="420" easingMode="easeoutcubic"/>
+        <animation property="color" from="FFFFFF00" to="FFFFFFFF" begin="90" duration="320" easingMode="easeout"/>
+      </storyboard>
+    </image>
+
+    <image name="randomCoverC" extra="true">
+      <path>{random:thumbnail}</path>
+      <pos>0.720 0.320</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.27 0.41</maxSize>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>40</zIndex>
+      <storyboard>
+        <animation property="scale" from="0.8" to="1" begin="0" duration="380" easingMode="easeoutcubic"/>
+        <animation property="color" from="FFFFFF00" to="FFFFFFFF" begin="0" duration="280" easingMode="easeout"/>
+      </storyboard>
+    </image>
+
+    <!-- O texto padrao "N JOGOS DISPONIVEIS" e substituido pelos textos acima -->
+    <text name="systemInfo">
+      <visible>false</visible>
+    </text>
+
+    <!-- Carrossel: cada item usa o "cartucho" de ./core/banner/ -->
+    <carousel name="systemcarousel">
+      <type>horizontal</type>
+      <pos>0 0.528</pos>
+      <size>1 0.372</size>
+      <color>00000000</color>
+      <colorEnd>00000000</colorEnd>
+      <logoSize>0.160 0.330</logoSize>
+      <logoScale>1.0</logoScale>
+      <maxLogoCount>6</maxLogoCount>
+      <systemInfoDelay>150</systemInfoDelay>
+      <scrollSound>${themePath}/core/sounds/systembrowse.wav</scrollSound>
+      <zIndex>20</zIndex>
+    </carousel>
+
+    <image name="logo">
+      <path>${themePath}/core/banner/${system.theme}.png</path>
+      <path>${themePath}/core/banner/${artName}.png</path>
+      <linearSmooth>true</linearSmooth>
+    </image>
+
+    <!-- Sistemas sem "cartucho" desenhado caem para o nome em texto -->
+    <text name="logoText">
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.030</fontSize>
+      <color>${sysmenuColor}</color>
+      <forceUppercase>true</forceUppercase>
+      <lineSpacing>1.1</lineSpacing>
+    </text>
+
+    <!-- Moldura de selecao sobre o item central -->
+    <image name="selectorFrame" extra="true">
+      <path>${themePath}/core/images/sysselect.png</path>
+      <pos>0.5 0.714</pos>
+      <origin>0.5 0.5</origin>
+      <size>0.166 0.318</size>
+      <color>${selectsysColor}</color>
+      <zIndex>25</zIndex>
+    </image>
+  </view>
+</theme>

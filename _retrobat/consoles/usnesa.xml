@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Moldura de console: Super Nintendo (US) -->
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="system, basic, detailed, grid, gamecarousel">
+    <image name="frameTop" extra="static">
+      <path>${themePath}/core/UsnesA/top.png</path>
+      <pos>0 0</pos>
+      <size>1 0.1</size>
+      <origin>0 0</origin>
+      <tile>false</tile>
+      <color>${sysColor}</color>
+      <zIndex>48</zIndex>
+    </image>
+    <image name="frameBottom" extra="static">
+      <path>${themePath}/core/UsnesA/bottom.png</path>
+      <pos>0 0.9</pos>
+      <size>1 0.1</size>
+      <origin>0 0</origin>
+      <tile>false</tile>
+      <color>${sysColor}</color>
+      <zIndex>48</zIndex>
+    </image>
+    <helpsystem name="help">
+      <pos>0.5 0.95</pos>
+      <origin>0.5 1</origin>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.0145</fontSize>
+      <textColor>${helpColor}</textColor>
+      <iconColor>${helpColor}</iconColor>
+    </helpsystem>
+  </view>
+
+  <view name="screen">
+    <text name="clock">
+      <pos>0.0225 0.025</pos>
+      <size>0.12 0.05</size>
+      <origin>0 0</origin>
+      <alignment>left</alignment>
+      <verticalAlignment>center</verticalAlignment>
+      <fontPath>${altFont}</fontPath>
+      <fontSize>0.0400</fontSize>
+      <color>${helpColor}</color>
+    </text>
+  </view>
+</theme>

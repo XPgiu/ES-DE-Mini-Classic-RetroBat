@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Elementos comuns a todas as telas: fundo, marcas d'agua do sistema e help.
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="system, basic, detailed, grid, gamecarousel">
+
+    <!-- Fundo chapado tingido pelo esquema de cores -->
+    <image name="background" extra="static">
+      <path>${themePath}/core/images/background.png</path>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <origin>0 0</origin>
+      <tile>false</tile>
+      <color>${backgroundColor}</color>
+      <zIndex>0</zIndex>
+    </image>
+
+    <!-- Marcas d'agua: o logo do sistema repetido bem apagado ao fundo.
+         1o <path>: nome do sistema do RetroBat == nome do arquivo de arte.
+         2o <path>: nome remapeado em ./_retrobat/systems/<sistema>.xml. -->
+    <image name="wm1" extra="true">
+      <path>${themePath}/system/logos/system-logo-white/${system.theme}.svg</path>
+      <path>${themePath}/system/logos/system-logo-white/${artName}.svg</path>
+      <pos>0.80 0.35</pos>
+      <origin>0 0</origin>
+      <maxSize>0.30 0.10</maxSize>
+      <color>${primaryColor}26</color>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="wm2" extra="true">
+      <path>${themePath}/system/logos/system-logo-white/${system.theme}.svg</path>
+      <path>${themePath}/system/logos/system-logo-white/${artName}.svg</path>
+      <pos>-0.03 0.11</pos>
+      <origin>0 0</origin>
+      <maxSize>0.45 0.10</maxSize>
+      <color>${primaryColor}0D</color>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="wm3" extra="true">
+      <path>${themePath}/system/logos/system-logo-white/${system.theme}.svg</path>
+      <path>${themePath}/system/logos/system-logo-white/${artName}.svg</path>
+      <pos>0.15 0.25</pos>
+      <origin>0 0</origin>
+      <maxSize>0.40 0.15</maxSize>
+      <color>${primaryColor}14</color>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="wm4" extra="true">
+      <path>${themePath}/system/logos/system-logo-white/${system.theme}.svg</path>
+      <path>${themePath}/system/logos/system-logo-white/${artName}.svg</path>
+      <pos>0.42 0.46</pos>
+      <origin>0 0</origin>
+      <maxSize>0.30 0.10</maxSize>
+      <color>${primaryColor}1F</color>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="wm5" extra="true">
+      <path>${themePath}/system/logos/system-logo-white/${system.theme}.svg</path>
+      <path>${themePath}/system/logos/system-logo-white/${artName}.svg</path>
+      <pos>0.50 0.05</pos>
+      <origin>0 0</origin>
+      <maxSize>0.35 0.125</maxSize>
+      <color>${primaryColor}26</color>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>10</zIndex>
+    </image>
+
+    <!-- Barra de ajuda (reposicionada por cada moldura de console) -->
+    <helpsystem name="help">
+      <pos>0.5 0.95</pos>
+      <origin>0.5 1</origin>
+      <fontPath>${primaryFont}</fontPath>
+      <fontSize>0.0145</fontSize>
+      <textColor>${helpColor}</textColor>
+      <iconColor>${helpColor}</iconColor>
+    </helpsystem>
+  </view>
+</theme>

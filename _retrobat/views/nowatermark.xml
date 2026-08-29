@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system, basic, detailed, grid, gamecarousel">
+    <image name="wm1" extra="true"><visible>false</visible></image>
+    <image name="wm2" extra="true"><visible>false</visible></image>
+    <image name="wm3" extra="true"><visible>false</visible></image>
+    <image name="wm4" extra="true"><visible>false</visible></image>
+    <image name="wm5" extra="true"><visible>false</visible></image>
+  </view>
+</theme>
