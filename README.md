@@ -78,8 +78,6 @@ adicionar um sistema, basta criar/editar um desses arquivos:
 </theme>
 ```
 
-Sistemas sem arte correspondente caem no nome em texto (`logoText`) — não
-quebram nada.
 
 ## Como usar
 
@@ -96,75 +94,3 @@ quebram nada.
 4. Lista vs grade: **Configurações da interface → Estilo de lista de jogos**
    (`detailed` = lista do tema original, `grid` = grade).
 
-## Pastas legadas do ES-DE
-
-`auto-allgames/`, `auto-favorites/`, `auto-lastplayed/`, `custom-collections/`,
-`mario/` e `zelda/` foram movidas para `_esde-legacy/`. O ES do RetroBat trata
-`<tema>/<sistema>/theme.xml` como sobreposição por sistema e tentava carregar
-esses arquivos no formato do ES-DE, gerando
-`<formatVersion> tag missing!` no `es_log.txt` a cada troca de coleção.
-Fora do caminho de varredura, o erro some.
-
-`controllerActivity`, `batteryIndicator` e `networkIcon` estão ocultos em
-`_retrobat/views/screen.xml`: sem `<imagePath>` o ES desenha retângulos
-piscando no canto inferior esquerdo, por cima da barra de ajuda — e o tema
-original não tem esses indicadores.
-
-## SVGs: classes CSS não funcionam
-
-O renderizador de SVG do EmulationStation lê apenas `style=` **inline** —
-blocos `<style>` e seletores de classe são ignorados, e todo shape com
-`class="stN"` cai no preenchimento padrão (preto).
-
-```
-nes.svg   <path style="fill: rgb(255,255,255)" …   ✅
-cps2.svg  <path class="st1" …                      ❌ vira preto
-```
-
-157 artes de `core/systems/`, `system/logos/system-logo-white/` e
-`system-logo-color/` estavam nesse formato. Foram convertidas: cada
-`class="stN"` virou o `style=` correspondente, com o `style=` próprio do
-elemento por último (mantendo a precedência do CSS). Originais em
-`_esde-legacy/svg-originais/`.
-
-Nos `cps1/2/3.svg` a classe `.st2` (o corpo do logo) não declarava `fill`
-nenhum — por isso o CAPCOM saía preto. Recebeu `fill:#FFFFFF`. O texto
-"PLAY SYSTEM" é um recorte (`fill-rule:evenodd`), então continua legível:
-aparece o fundo através dele. Em `sgb.svg`, duas classes só de contorno
-receberam `fill:none`.
-
-**Ao adicionar arte nova:** use `style=` inline ou atributos `fill=`/`stroke=`.
-Classe CSS não renderiza.
-
-## Vídeo e letreiro aleatórios não sincronizam
-
-Cada token `{random...}` é resolvido de forma independente em
-`SystemView::getViewElements()`. Não existe "jogo sorteado" compartilhado
-entre elementos, nem propriedade para sincronizar, nem manipulação de string
-no XML do tema para derivar um caminho de mídia a partir de outro. Dois
-elementos `{random}` = dois jogos diferentes, sempre. (O próprio
-es-theme-carbon usa `{random:thumbnail}` 8× em `animatedcovers.xml`
-justamente para obter 8 jogos distintos.)
-
-O tema mostra letreiro + vídeo lado a lado assumindo isso. Para ver um jogo
-só por vez, use **Destaque do sistema → Logo de jogo aleatório**, que deixa
-um único elemento na tela.
-
-Tokens aceitos: `{random}`, `{random:image}`, `{random:thumbnail}`,
-`{random:marquee}`, `{random:fanart}`, `{random:titleshot}`.
-
-## Limites conhecidos
-
-- O ES-DE tinha 3 tamanhos de fonte (`medium/large/x-large`) por variante; o
-  RetroBat não expõe isso. As medidas ficaram no equivalente ao `medium`.
-- `system/metadata/` (descrições traduzidas de cada console) e
-  `system/coversize/` não são lidos: o ES do RetroBat já fornece
-  `${system.fullName}`, `${system.manufacturer}` e `${system.releaseYear}`.
-  Os arquivos foram mantidos, mas ficam inertes.
-- O ES-DE mostrava "Emulator" no painel direito; aqui a linha virou
-  "Partidas" (`md_playcount`), que é o metadado equivalente disponível.
-- As medidas do carrossel (`logoSize`, `maxLogoCount` em
-  `_retrobat/views/system.xml`) foram calibradas para 16:9. Em telas muito
-  largas ou verticais pode valer ajustar esses dois valores.
-
-Licença original mantida: Creative Commons CC-BY-NC-SA — Stuart Learmonth.
