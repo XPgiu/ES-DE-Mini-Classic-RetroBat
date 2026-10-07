@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- flatpak (Batocera) usa a arte de "desktop" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>desktop</artName>
+  </variables>
+</theme>

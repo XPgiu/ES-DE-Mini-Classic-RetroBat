@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sc-3000 (Batocera) usa a arte de "sg-1000" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>sg-1000</artName>
+  </variables>
+</theme>

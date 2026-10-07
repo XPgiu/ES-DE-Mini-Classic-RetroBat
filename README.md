@@ -53,7 +53,7 @@ _retrobat/
   colorsets/  12 esquemas de cores (portados de colors.xml)
   consoles/   6 molduras: snes, usnesa, nes, mega, master, psx
   views/      screen, menu, common, system, basic, detailed, grid, gamecarousel
-  systems/    95 arquivos de mapeamento de nome de sistema -> nome de arte
+  systems/    135 arquivos de mapeamento de nome de sistema -> nome de arte
 theme-esde.xml                theme.xml original do ES-DE (referência)
 core/, system/                arte original, intocada
 ```
@@ -79,6 +79,26 @@ adicionar um sistema, basta criar/editar um desses arquivos:
   <variables><artName>snes</artName></variables>
 </theme>
 ```
+
+### Cobertura de sistemas (RetroBat + Batocera)
+
+A lista de sistemas foi comparada com o `es_systems.yml` oficial do Batocera
+(260 sistemas, mesma base usada pelo tema Carbon):
+
+- **227** sistemas têm arte própria ou mapeada (logo, cartucho e/ou ilustração).
+- **33** sistemas sem nenhuma arte no tema original aparecem com o **nome em
+  texto** no carrossel (fallback `logoText`), sem quebrar a tela:
+  `advision apfm1000 beena bk camplynx cassettevision cgenie commanderx16
+  ctvboy enterprise gametank gong gp32 laser310 loopy mz2000 mz2500 mz700
+  mz800 mz80k pc60 pcw pdp1 pico pv2000 rx78 segaai socrates sv8000 tutor tvc
+  vemulator vis`.
+
+Para dar arte a um desses, basta adicionar `system/logos/system-logo-white/<sistema>.svg`,
+`core/banner/<sistema>.png` e `core/systems/<sistema>.svg`.
+
+> **EN:** Checked against Batocera's official `es_systems.yml` (260 systems).
+> 227 have dedicated or mapped artwork; the remaining 33 (listed above) have
+> no artwork in the original theme and fall back to the system name as text.
 
 
 ## Como usar

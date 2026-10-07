@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- mohaa (Batocera) usa a arte de "ports" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>ports</artName>
+  </variables>
+</theme>
