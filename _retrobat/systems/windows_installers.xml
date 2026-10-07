@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- windows_installers (Batocera) usa a arte de "windows" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>windows</artName>
+  </variables>
+</theme>

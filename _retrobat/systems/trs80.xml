@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- trs80 (Batocera) usa a arte de "trs-80" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>trs-80</artName>
+  </variables>
+</theme>

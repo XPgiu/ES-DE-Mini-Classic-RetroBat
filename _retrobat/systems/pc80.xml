@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- pc80 (Batocera) usa a arte de "pc88" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>pc88</artName>
+  </variables>
+</theme>

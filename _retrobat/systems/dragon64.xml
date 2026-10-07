@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- dragon64 (Batocera) usa a arte de "dragon32" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>dragon32</artName>
+  </variables>
+</theme>

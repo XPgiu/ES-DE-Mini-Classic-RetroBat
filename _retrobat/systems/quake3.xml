@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- quake3 (Batocera) usa a arte de "quake" do tema original -->
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <artName>quake</artName>
+  </variables>
+</theme>
